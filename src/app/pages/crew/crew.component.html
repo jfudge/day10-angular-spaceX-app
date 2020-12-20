@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <li *ngFor="let crewMember of crew" class="list-group-item">
+    <!-- Create customized link using the data we get from the API -->
+    <a [routerLink]="['/crew', crewMember.id]">{{ crewMember.name }}</a>
+  </li>
+</ul>
